@@ -47,11 +47,11 @@ tweet = ""
 new_word = ""
 
 for i in range(0,1):
-    t = Twitter(auth=OAuth("4001032633-TOqB8Rtl88ADmADRRP5eLoEhzgHBvRIeeLPkgEK", "rq9lTJ0AtX5ABqGEUpt2eu115zfrq4ghPtpmVkgeWnFNv",  "citHsiYBgLuClM07qtYtOvDbw", "CPef5rf8kuP3tzXseJSe6JVNtCPMAPecBbDFsDsADBjk620IFU"))
-    #printable = ""
+    t = Twitter(auth=OAuth("<nope>", "<nope>",  "<nope>", "<nope>"))
+   
     for i in range(0, 20):
         tweet += " " + word
-       # printable = (" " + word)
+     
         while (word == new_word):
             for branch in words[word]:
                 if (random.randint(0,100) <= branch[0] * 100):
